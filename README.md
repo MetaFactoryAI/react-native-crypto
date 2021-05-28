@@ -1,3 +1,7 @@
+# METAFACTORY EDITION - react-native-crypto-expo
+
+This library is a fork of 'react-native-crypto' with the usage of RNRandomBytes removed, we remove it because we do not have a way to eject it in expo and we want to continue using react-native-web with an expo managed environment.
+
 # react-native-crypto
 
 Note: this module is a clone of [crypto-browserify](https://github.com/crypto-browserify/crypto-browserify), with randombytes replaced.
