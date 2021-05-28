@@ -1,7 +1,10 @@
 'use strict'
 
-import { randomBytes } from 'react-native-randombytes'
-exports.randomBytes = exports.rng = exports.pseudoRandomBytes = exports.prng = randomBytes
+import * as Random from 'expo-random'
+
+exports.randomBytes = exports.rng = exports.pseudoRandomBytes = exports.prng = function () {
+  return Random.getRandomBytes(Math.floor(Math.random() * 1024));
+}
 
 // implement window.getRandomValues(), for packages that rely on it
 if (typeof window === 'object') {
