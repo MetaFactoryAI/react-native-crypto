@@ -2,8 +2,8 @@
 
 import * as Random from 'expo-random'
 
-exports.randomBytes = exports.rng = exports.pseudoRandomBytes = exports.prng = function () {
-  return Random.getRandomBytes(Math.floor(Math.random() * 1024));
+exports.randomBytes = exports.rng = exports.pseudoRandomBytes = exports.prng = function (bytes) {
+  return Random.getRandomBytes(bytes);
 }
 
 // implement window.getRandomValues(), for packages that rely on it
